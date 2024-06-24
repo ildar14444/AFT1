@@ -35,8 +35,5 @@ public class ReqressTest {
 
         Assertions.assertTrue(emails.stream().allMatch(x->x.endsWith("@reqres.in")));
 
-        int i = 0;
     }
-
-
 }

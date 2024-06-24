@@ -8,13 +8,11 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class Main_Page {
 
-
     private final SelenideElement inputBox = $x("//form//input");
 
     public Main_Page(String url){
          Selenide.open(url);
     }
-
 
     public void search(String searchString) {
         inputBox.setValue(searchString);

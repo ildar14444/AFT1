@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-
 public class AppleTest extends BaseSelenideTest {
 
     final static private String BASE_URL = "https://appleinsider.ru/";
@@ -17,9 +16,7 @@ public class AppleTest extends BaseSelenideTest {
         main_page1.search(SEARCH_STRING);
         SearchPage searchPage1 = new SearchPage();
         String href = searchPage1.hrefFromFirstArticles();
-        System.out.println(href);
         assertTrue(href.contains(WAITING_STRING));
 
-        int i = 1;
     }
 }
