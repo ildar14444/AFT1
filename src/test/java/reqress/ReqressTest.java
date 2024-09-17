@@ -13,7 +13,7 @@ import static org.hamcrest.core.IsEqual.equalTo;
 public class ReqressTest {
 
     private final static String URL = "https://reqres.in/";
-
+//новый комент
     @Test
     public void checkListUserTest(){
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecOK200());
